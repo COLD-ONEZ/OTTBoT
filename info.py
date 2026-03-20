@@ -26,4 +26,4 @@ STREAMING_AVAILABILITY_API_KEY = environ.get("STREAMING_AVAILABILITY_API_KEY", "
 
 # 3. OTT Details API (RapidAPI) — India focused
 #    https://rapidapi.com/gox-ai-gox-ai-default/api/ott-details
-OTT_DETAILS_API_KEY = environ.get("OTT_DETAILS_API_KEY", "")
+OTT_DETAILS_API_KEY = environ.get("OTT_DETAILS_API_KEY", "b573a7d01fmsh1eedbb86e0752efp15d71bjsn3b35a9c55a70")
