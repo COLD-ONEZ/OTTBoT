@@ -116,15 +116,7 @@ async def cmd_help(_, message: Message):
     await message.reply(
         "<b>🎬 OTT Release Date Bot</b>\n\n"
         "Send any date to see what releases that day:\n"
-        "<code>March 21 2026</code>  or  <code>21/03/2026</code>\n\n"
-        "<b>Admin Commands:</b>\n"
-        "• /addrelease — manually add a release\n"
-        "• /removerelease March 21 2026 | Title — remove an entry\n\n"
-        "<b>Channel Update (PM only):</b>\n"
-        "• /sendupdate -100xxxxxxxxxx — post Today+Tomorrow to channel\n"
-        "  (auto-edited every day at midnight IST)\n"
-        "• /stopupdate -100xxxxxxxxxx — stop daily updates\n"
-        "• /listchannels — see registered channels",
+        "<code>March 21 2026</code>  or  <code>21/03/2026</code>",
         parse_mode=ParseMode.HTML,
     )
 
