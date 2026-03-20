@@ -114,11 +114,11 @@ def format_today_tomorrow(
 ) -> str:
     """Image 2 style — Today + Tomorrow."""
     today_block = (
-        f"<b>Today - {_fmt_date(today)}</b>\n"
+        f"<pre><b>Today - {_fmt_date(today)}</b></pre>\n"
         + _build_section(today_releases)
     )
     tomorrow_block = (
-        f"\n<b>Tomorrow - {_fmt_date(tomorrow)}</b>\n"
+        f"\n<pre><b>Tomorrow - {_fmt_date(tomorrow)}</b></pre>\n"
         + _build_section(tomorrow_releases)
     )
     return today_block + "\n" + tomorrow_block
