@@ -114,7 +114,7 @@ async def get_or_fetch(date_obj: date) -> dict:
 @Client.on_message(filters.command(["start", "help"]))
 async def cmd_help(_, message: Message):
     await message.reply(
-        "<b>🎬 OTT Release Date Bot</b>\n\n"
+        "<b>🎬 OTT Info Bot</b>\n\n"
         "Send any date to see what releases that day:\n"
         "<code>March 21 2026</code>  or  <code>21/03/2026</code>",
         parse_mode=ParseMode.HTML,
