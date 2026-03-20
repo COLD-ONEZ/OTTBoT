@@ -18,7 +18,7 @@ DATABASE_NAME = environ.get("DATABASE_NAME", "OttReleaseBot")
 # ── OTT / Streaming API Keys ──────────────────────────────────────────────────
 
 # 1. TMDB (FREE)  →  https://www.themoviedb.org/settings/api
-TMDB_API_KEY = environ.get("TMDB_API_KEY", "")
+TMDB_API_KEY = environ.get("TMDB_API_KEY", "7d034fbeb71688b7be38ef92a020a79f")
 
 # 2. Streaming Availability API (RapidAPI)
 #    https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability
