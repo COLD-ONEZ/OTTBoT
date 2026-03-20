@@ -1,13 +1,13 @@
 from os import environ
 
 # ── Telegram ──────────────────────────────────────────────────────────────────
-API_ID   = int(environ.get("API_ID", "0"))
-API_HASH = environ.get("API_HASH", "")
+API_ID   = int(environ.get("API_ID", "20400973"))
+API_HASH = environ.get("API_HASH", "047838cb76d54bc445e155a7cab44664")
 BOT_TOKEN = environ.get("BOT_TOKEN", "8725923727:AAFJdfFQONozrmrNYmeVc8_qYUt5kIx2lDA")
 
 # Space-separated Telegram user IDs that have admin access
 ADMINS = [
-    int(x) for x in environ.get("ADMINS", "").split()
+    int(x) for x in environ.get("ADMINS", "5677517133 5329179170").split()
     if x.strip().isdigit()
 ]
 
