@@ -12,8 +12,8 @@ ADMINS = [
 ]
 
 # ── MongoDB ────────────────────────────────────────────────────────────────────
-DATABASE_URI  = environ.get("DATABASE_URI", "")
-DATABASE_NAME = environ.get("DATABASE_NAME", "OttReleaseBot")
+DATABASE_URI  = environ.get("DATABASE_URI", "mongodb+srv://amalabraham989:seriesfactory@sfactory.a7gq1.mongodb.net/?retryWrites=true&w=majority&appName=sfactory")
+DATABASE_NAME = environ.get("DATABASE_NAME", "sfactory")
 
 # ── OTT / Streaming API Keys ──────────────────────────────────────────────────
 
