@@ -22,7 +22,7 @@ TMDB_API_KEY = environ.get("TMDB_API_KEY", "")
 
 # 2. Streaming Availability API (RapidAPI)
 #    https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability
-STREAMING_AVAILABILITY_API_KEY = environ.get("STREAMING_AVAILABILITY_API_KEY", "")
+STREAMING_AVAILABILITY_API_KEY = environ.get("STREAMING_AVAILABILITY_API_KEY", "1bca4f2baamsh845ce3c7d565b24p133fa3jsnc6518baacd36")
 
 # 3. OTT Details API (RapidAPI) — India focused
 #    https://rapidapi.com/gox-ai-gox-ai-default/api/ott-details
