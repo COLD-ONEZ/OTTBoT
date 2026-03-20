@@ -3,7 +3,7 @@ from os import environ
 # ── Telegram ──────────────────────────────────────────────────────────────────
 API_ID   = int(environ.get("API_ID", "0"))
 API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+BOT_TOKEN = environ.get("BOT_TOKEN", "8725923727:AAFJdfFQONozrmrNYmeVc8_qYUt5kIx2lDA")
 
 # Space-separated Telegram user IDs that have admin access
 ADMINS = [
