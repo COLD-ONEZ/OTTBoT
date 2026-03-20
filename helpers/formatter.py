@@ -47,14 +47,14 @@ def _build_section(releases: dict) -> str:
 
     movies = releases.get("movies", [])
     if movies:
-        parts.append("\n<b>Movies</b>\n")
+        parts.append("\n<pre>Movies</pre>\n")
         for i, m in enumerate(movies, 1):
             lang = resolve_language(m.get("language", ""))
             parts.append(f"{i}. {m['title']} ({lang})")
 
     series_list = releases.get("series", [])
     if series_list:
-        parts.append("\n<b>Series</b>\n")
+        parts.append("\n<pre>Series</pre>\n")
         for i, s in enumerate(series_list, 1):
             lang = resolve_language(s.get("language", ""))
             extra = (s.get("extra") or "").strip()
@@ -69,7 +69,7 @@ def _build_section(releases: dict) -> str:
 
 def format_single_date(d: date, releases: dict) -> str:
     """Image 1 style — one date."""
-    header = f"<b>{_fmt_date(d)}</b>"
+    header = f"<code>{_fmt_date(d)}</code>"
     return header + "\n" + _build_section(releases)
 
 
@@ -81,11 +81,11 @@ def format_today_tomorrow(
 ) -> str:
     """Image 2 style — Today + Tomorrow."""
     today_block = (
-        f"<pre><b>Today - {_fmt_date(today)}</b></pre>\n"
+        f"<code>Today - {_fmt_date(today)}</code>\n"
         + _build_section(today_releases)
     )
     tomorrow_block = (
-        f"\n<pre><b>Tomorrow - {_fmt_date(tomorrow)}</b></pre>\n"
+        f"\n<code>Tomorrow - {_fmt_date(tomorrow)}</code>\n"
         + _build_section(tomorrow_releases)
     )
     return today_block + "\n" + tomorrow_block
