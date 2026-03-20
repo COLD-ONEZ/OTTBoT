@@ -1,36 +1,3 @@
-"""
-formatter.py
-Produces the exact message format shown in the screenshots.
-
-Single-date (Image 1):
-    March 18 2026
-
-    Movies
-
-    1. Sarvam maya (Malayalam)
-    2. Thani oruvan (Tamil)
-
-    Series
-
-    1. Loki S01 (English)
-    2. Stranger Things S01E02 (English)
-
-Today+Tomorrow (Image 2):
-    Today - March 20 2026
-
-    Movies
-    ...
-    Series
-    ...
-
-    Tomorrow - March 21 2026
-
-    Movies
-    ...
-    Series
-    ...
-"""
-
 from datetime import date
 from typing import Optional
 
